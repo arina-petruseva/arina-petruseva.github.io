@@ -1,13 +1,17 @@
+<!DOCTYPE html>
 <html>
- 
+<head>
+  <title>Random Number Generator</title>
+  <script>
+    function generateRandomNumber() {
+      var randomNumber = Math.floor(Math.random() * 10) + 1;
+      document.getElementById("result").innerHTML = "Random Number: " + randomNumber;
+    }
+  </script>
+</head>
 <body>
-  <h1>Arina P</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-  <ul>
-   <li>item1</li>
-   <li>item2</li>
-  </ul>
+  <h1>Random Number Generator</h1>
+  <button onclick="generateRandomNumber()">Generate Random Number</button>
+  <p id="result"></p>
 </body>
- 
 </html>
